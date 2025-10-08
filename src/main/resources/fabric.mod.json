@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "polymiter",
+  "version": "${version}",
+  "name": "PolymITer",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/polymiter/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "froosty11.polymiter.client.PolymiterDataGenerator"
+    ],
+    "client": [
+      "froosty11.polymiter.client.PolymiterClient"
+    ],
+    "main": [
+      "froosty11.polymiter.Polymiter"
+    ]
+  },
+  "mixins": [
+    "polymiter.mixins.json",
+    {
+      "config": "polymiter.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
