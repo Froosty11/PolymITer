@@ -11,21 +11,14 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "froosty11.polymiter.client.PolymiterDataGenerator"
-    ],
-    "client": [
-      "froosty11.polymiter.client.PolymiterClient"
+      "froosty11.polymiter.datagen.PolymiterDataGenerator"
     ],
     "main": [
       "froosty11.polymiter.Polymiter"
     ]
   },
   "mixins": [
-    "polymiter.mixins.json",
-    {
-      "config": "polymiter.client.mixins.json",
-      "environment": "client"
-    }
+    "polymiter.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
