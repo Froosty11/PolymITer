@@ -16,15 +16,12 @@ loom {
     mods {
         "polymiter" {
             sourceSet sourceSets.main
-            sourceSet sourceSets.client
         }
     }
 }
 
 fabricApi {
-    configureDataGeneration {
-        client = true
-    }
+    configureDataGeneration {}
 }
 
 repositories {

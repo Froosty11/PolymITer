@@ -15,7 +15,7 @@ import net.minecraft.util.Rarity;
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item TEST_ITEM = register("test_item", Item::new, new Item.Settings());
+    public static final Item TEST_ITEM = register("test_item", SimplePolymerItem::new, new Item.Settings());
 
     public static final TagKey<BannerPattern> PIRKKO_PATTERN_TAG = TagKey.of(RegistryKeys.BANNER_PATTERN, Identifier.of(Polymiter.MOD_ID, "pirkko"));
     public static final Item PIRKKO_BANNER_PATTERN = register("pirkko_banner_pattern", SimplePolymerItem::new, new SimplePolymerItem.Settings().maxCount(1).rarity(Rarity.RARE));
