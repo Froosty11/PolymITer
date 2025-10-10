@@ -32,6 +32,23 @@ public class ModItems {
                     .component(DataComponentTypes.PROVIDES_BANNER_PATTERNS, PIRKKO_PATTERN_TAG)
     );
 
+    public static final Item SPIKEN_DRINK = register(
+            "spiken_drink",
+            DrinkItem::new,
+            new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.UNCOMMON)
+            );
+    public static final Item slaggan_drink = register(
+            "slaggan_drink",
+            DrinkItem::new,
+            new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.UNCOMMON)
+    );
+
+
+
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Polymiter.MOD_ID, name));
         Item item = itemFactory.apply(settings.registryKey(itemKey));
