@@ -1,0 +1,93 @@
+{
+  "block.polymiter.banner.tmeit.white": "White field of TMEIT",
+  "block.polymiter.banner.qmisk.white": "White field of QMISK",
+  "block.polymiter.banner.itk.white": "White ITK field o' honor",
+  "block.polymiter.banner.itchapter.white": "White IT-Chapter field",
+  "block.polymiter.banner.pirkko.white": "White Pirkko field",
+
+  "block.polymiter.banner.tmeit.orange": "Orange TMEIT field ablaze",
+  "block.polymiter.banner.qmisk.orange": "Orange QMISK field o' fire",
+  "block.polymiter.banner.itk.orange": "Orange ITK blaze",
+  "block.polymiter.banner.itchapter.orange": "Orange IT-Chapter sunlit field",
+  "block.polymiter.banner.pirkko.orange": "Orange Pirkko field",
+
+  "block.polymiter.banner.tmeit.magenta": "Magenta TMEIT field o' mystery",
+  "block.polymiter.banner.qmisk.magenta": "Magenta QMISK patch",
+  "block.polymiter.banner.itk.magenta": "Magenta ITK field",
+  "block.polymiter.banner.itchapter.magenta": "Magenta IT-Chapter patchwork",
+  "block.polymiter.banner.pirkko.magenta": "Magenta Pirkko patch",
+
+  "block.polymiter.banner.tmeit.light_blue": "Light blue TMEIT sky patch",
+  "block.polymiter.banner.qmisk.light_blue": "Light blue QMISK horizon",
+  "block.polymiter.banner.itk.light_blue": "Light blue ITK field",
+  "block.polymiter.banner.itchapter.light_blue": "Light blue IT-Chapter sky field",
+  "block.polymiter.banner.pirkko.light_blue": "Light blue Pirkko field",
+
+  "block.polymiter.banner.tmeit.yellow": "Yellow TMEIT sunburst",
+  "block.polymiter.banner.qmisk.yellow": "Yellow QMISK field o' gold",
+  "block.polymiter.banner.itk.yellow": "Yellow ITK gleaming field",
+  "block.polymiter.banner.itchapter.yellow": "Yellow IT-Chapter rays",
+  "block.polymiter.banner.pirkko.yellow": "Yellow Pirkko patch",
+
+  "block.polymiter.banner.tmeit.lime": "Lime TMEIT verdant patch",
+  "block.polymiter.banner.qmisk.lime": "Lime QMISK greenery",
+  "block.polymiter.banner.itk.lime": "Lime ITK field o' growth",
+  "block.polymiter.banner.itchapter.lime": "Lime IT-Chapter field",
+  "block.polymiter.banner.pirkko.lime": "Lime Pirkko patch",
+
+  "block.polymiter.banner.tmeit.pink": "Pink TMEIT rosy patch",
+  "block.polymiter.banner.qmisk.pink": "Pink QMISK bloom",
+  "block.polymiter.banner.itk.pink": "Pink ITK field",
+  "block.polymiter.banner.itchapter.pink": "Pink IT-Chapter blossom",
+  "block.polymiter.banner.pirkko.pink": "Pink Pirkko patch",
+
+  "block.polymiter.banner.tmeit.gray": "Gray TMEIT misty field",
+  "block.polymiter.banner.qmisk.gray": "Gray QMISK patch",
+  "block.polymiter.banner.itk.gray": "Gray ITK shadowed field",
+  "block.polymiter.banner.itchapter.gray": "Gray IT-Chapter fog",
+  "block.polymiter.banner.pirkko.gray": "Gray Pirkko patch",
+
+  "block.polymiter.banner.tmeit.light_gray": "Light gray TMEIT foggy field",
+  "block.polymiter.banner.qmisk.light_gray": "Light gray QMISK patch",
+  "block.polymiter.banner.itk.light_gray": "Light gray ITK field",
+  "block.polymiter.banner.itchapter.light_gray": "Light gray IT-Chapter patch",
+  "block.polymiter.banner.pirkko.light_gray": "Light gray Pirkko patch",
+
+  "block.polymiter.banner.tmeit.cyan": "Cyan TMEIT ocean patch",
+  "block.polymiter.banner.qmisk.cyan": "Cyan QMISK wave field",
+  "block.polymiter.banner.itk.cyan": "Cyan ITK tide patch",
+  "block.polymiter.banner.itchapter.cyan": "Cyan IT-Chapter sea patch",
+  "block.polymiter.banner.pirkko.cyan": "Cyan Pirkko wave field",
+
+  "block.polymiter.banner.tmeit.purple": "Purple TMEIT royal patch",
+  "block.polymiter.banner.qmisk.purple": "Purple QMISK noble field",
+  "block.polymiter.banner.itk.purple": "Purple ITK patch",
+  "block.polymiter.banner.itchapter.purple": "Purple IT-Chapter field",
+  "block.polymiter.banner.pirkko.purple": "Purple Pirkko patch",
+
+  "block.polymiter.banner.tmeit.blue": "Blue TMEIT deep sea patch",
+  "block.polymiter.banner.qmisk.blue": "Blue QMISK ocean field",
+  "block.polymiter.banner.itk.blue": "Blue ITK wave patch",
+  "block.polymiter.banner.itchapter.blue": "Blue IT-Chapter tide",
+  "block.polymiter.banner.pirkko.blue": "Blue Pirkko patch",
+
+  "block.polymiter.banner.tmeit.brown": "Brown TMEIT earthy patch",
+  "block.polymiter.banner.qmisk.brown": "Brown QMISK soil patch",
+  "block.polymiter.banner.itk.brown": "Brown ITK patch",
+  "block.polymiter.banner.itchapter.brown": "Brown IT-Chapter field",
+  "block.polymiter.banner.pirkko.brown": "Brown Pirkko patch",
+
+  "block.polymiter.banner.tmeit.red": "Red TMEIT fiery patch",
+  "block.polymiter.banner.qmisk.red": "Red QMISK blazing field",
+  "block.polymiter.banner.itk.red": "Red ITK patch",
+  "block.polymiter.banner.itchapter.red": "Red IT-Chapter fire patch",
+  "block.polymiter.banner.pirkko.red": "Red Pirkko patch",
+
+  "block.polymiter.banner.tmeit.black": "Black TMEIT shadow patch",
+  "block.polymiter.banner.qmisk.black": "Black QMISK dark patch",
+  "block.polymiter.banner.itk.black": "Black ITK field o' shadows",
+  "block.polymiter.banner.itchapter.black": "Black IT-Chapter patch",
+  "block.polymiter.banner.pirkko.black": "Black Pirkko patch",
+
+  "item.polymiter.pirkko_banner_pattern": "Pirkko banner pattern"
+}

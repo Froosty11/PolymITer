@@ -1,5 +1,93 @@
 {
-  "block.polymiter.banner.tmeit": "TMEIT Pattern",
-  "block.polymiter.banner.qmisk": "QMISK Pattern",
-  "block.polymiter.banner.itk": "ITK Pattern"
+  "block.polymiter.banner.tmeit.white": "White TMEIT",
+  "block.polymiter.banner.qmisk.white": "White QMISK",
+  "block.polymiter.banner.itk.white": "White ITK",
+  "block.polymiter.banner.itchapter.white": "White IT-Chapter",
+  "block.polymiter.banner.pirkko.white": "White Pirkko",
+
+  "block.polymiter.banner.tmeit.orange": "Orange TMEIT",
+  "block.polymiter.banner.qmisk.orange": "Orange QMISK",
+  "block.polymiter.banner.itk.orange": "Orange ITK",
+  "block.polymiter.banner.itchapter.orange": "Orange IT-Chapter",
+  "block.polymiter.banner.pirkko.orange": "Orange Pirkko",
+
+  "block.polymiter.banner.tmeit.magenta": "Magenta TMEIT",
+  "block.polymiter.banner.qmisk.magenta": "Magenta QMISK",
+  "block.polymiter.banner.itk.magenta": "Magenta ITK",
+  "block.polymiter.banner.itchapter.magenta": "Magenta IT-Chapter",
+  "block.polymiter.banner.pirkko.magenta": "Magenta Pirkko",
+
+  "block.polymiter.banner.tmeit.light_blue": "Light Blue TMEIT",
+  "block.polymiter.banner.qmisk.light_blue": "Light Blue QMISK",
+  "block.polymiter.banner.itk.light_blue": "Light Blue ITK",
+  "block.polymiter.banner.itchapter.light_blue": "Light Blue IT-Chapter",
+  "block.polymiter.banner.pirkko.light_blue": "Light Blue Pirkko",
+
+  "block.polymiter.banner.tmeit.yellow": "Yellow TMEIT",
+  "block.polymiter.banner.qmisk.yellow": "Yellow QMISK",
+  "block.polymiter.banner.itk.yellow": "Yellow ITK",
+  "block.polymiter.banner.itchapter.yellow": "Yellow IT-Chapter",
+  "block.polymiter.banner.pirkko.yellow": "Yellow Pirkko",
+
+  "block.polymiter.banner.tmeit.lime": "Lime TMEIT",
+  "block.polymiter.banner.qmisk.lime": "Lime QMISK",
+  "block.polymiter.banner.itk.lime": "Lime ITK",
+  "block.polymiter.banner.itchapter.lime": "Lime IT-Chapter",
+  "block.polymiter.banner.pirkko.lime": "Lime Pirkko",
+
+  "block.polymiter.banner.tmeit.pink": "Pink TMEIT",
+  "block.polymiter.banner.qmisk.pink": "Pink QMISK",
+  "block.polymiter.banner.itk.pink": "Pink ITK",
+  "block.polymiter.banner.itchapter.pink": "Pink IT-Chapter",
+  "block.polymiter.banner.pirkko.pink": "Pink Pirkko",
+
+  "block.polymiter.banner.tmeit.gray": "Gray TMEIT",
+  "block.polymiter.banner.qmisk.gray": "Gray QMISK",
+  "block.polymiter.banner.itk.gray": "Gray ITK",
+  "block.polymiter.banner.itchapter.gray": "Gray IT-Chapter",
+  "block.polymiter.banner.pirkko.gray": "Gray Pirkko",
+
+  "block.polymiter.banner.tmeit.light_gray": "Light Gray TMEIT",
+  "block.polymiter.banner.qmisk.light_gray": "Light Gray QMISK",
+  "block.polymiter.banner.itk.light_gray": "Light Gray ITK",
+  "block.polymiter.banner.itchapter.light_gray": "Light Gray IT-Chapter",
+  "block.polymiter.banner.pirkko.light_gray": "Light Gray Pirkko",
+
+  "block.polymiter.banner.tmeit.cyan": "Cyan TMEIT",
+  "block.polymiter.banner.qmisk.cyan": "Cyan QMISK",
+  "block.polymiter.banner.itk.cyan": "Cyan ITK",
+  "block.polymiter.banner.itchapter.cyan": "Cyan IT-Chapter",
+  "block.polymiter.banner.pirkko.cyan": "Cyan Pirkko",
+
+  "block.polymiter.banner.tmeit.purple": "Purple TMEIT",
+  "block.polymiter.banner.qmisk.purple": "Purple QMISK",
+  "block.polymiter.banner.itk.purple": "Purple ITK",
+  "block.polymiter.banner.itchapter.purple": "Purple IT-Chapter",
+  "block.polymiter.banner.pirkko.purple": "Purple Pirkko",
+
+  "block.polymiter.banner.tmeit.blue": "Blue TMEIT",
+  "block.polymiter.banner.qmisk.blue": "Blue QMISK",
+  "block.polymiter.banner.itk.blue": "Blue ITK",
+  "block.polymiter.banner.itchapter.blue": "Blue IT-Chapter",
+  "block.polymiter.banner.pirkko.blue": "Blue Pirkko",
+
+  "block.polymiter.banner.tmeit.brown": "Brown TMEIT",
+  "block.polymiter.banner.qmisk.brown": "Brown QMISK",
+  "block.polymiter.banner.itk.brown": "Brown ITK",
+  "block.polymiter.banner.itchapter.brown": "Brown IT-Chapter",
+  "block.polymiter.banner.pirkko.brown": "Brown Pirkko",
+
+  "block.polymiter.banner.tmeit.red": "Red TMEIT",
+  "block.polymiter.banner.qmisk.red": "Red QMISK",
+  "block.polymiter.banner.itk.red": "Red ITK",
+  "block.polymiter.banner.itchapter.red": "Red IT-Chapter",
+  "block.polymiter.banner.pirkko.red": "Red Pirkko",
+
+  "block.polymiter.banner.tmeit.black": "Black TMEIT",
+  "block.polymiter.banner.qmisk.black": "Black QMISK",
+  "block.polymiter.banner.itk.black": "Black ITK",
+  "block.polymiter.banner.itchapter.black": "Black IT-Chapter",
+  "block.polymiter.banner.pirkko.black": "Black Pirkko",
+
+  "item.polymiter.pirkko_banner_pattern":  "Pirkko Banner Pattern"
 }

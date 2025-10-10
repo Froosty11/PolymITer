@@ -3,6 +3,7 @@ package froosty11.polymiter;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import froosty11.polymiter.item.ModItems;
 import froosty11.polymiter.item.other.BannerPatternItems;
+import froosty11.polymiter.statuseffects.ModStatusEffects;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.util.Identifier;
@@ -17,16 +18,14 @@ public class Polymiter implements ModInitializer {
     public static final String MOD_ID = "polymiter";
     public static final Logger LOGGER = LoggerFactory.getLogger("PolymITer");
 
+
     @Override
     public void onInitialize() {
         ModItems.initialize();
+        ModStatusEffects.initialize();
 
-        //debugging cuz no fucking items render at all. they're all purple bricks
+
         Identifier expectedId = Identifier.of(MOD_ID, "pirkko_banner_pattern");
-        LOGGER.info("Expected PIRKKO_BANNER_PATTERN id: " + expectedId.toString());
-
-        checkResource("/assets/polymiter/models/item/pirkko_banner_pattern.json");
-        checkResource("/assets/polymiter/textures/item/pirkko_banner_pattern.png");
 
 
         //polymer shish

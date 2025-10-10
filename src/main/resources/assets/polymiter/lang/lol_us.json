@@ -1,0 +1,93 @@
+{
+  "block.polymiter.banner.tmeit.white": "wiit sippurz",
+  "block.polymiter.banner.qmisk.white": "wite kmizks",
+  "block.polymiter.banner.itk.white": "alabastr nerdz",
+  "block.polymiter.banner.itchapter.white": "chaptr wiit",
+  "block.polymiter.banner.pirkko.white": "plastik goop",
+
+  "block.polymiter.banner.tmeit.orange": "oranj slosherz",
+  "block.polymiter.banner.qmisk.orange": "ale oranj kmizk",
+  "block.polymiter.banner.itk.orange": "citrus calcuz",
+  "block.polymiter.banner.itchapter.orange": "chaptr oranj",
+  "block.polymiter.banner.pirkko.orange": "3d printer goop",
+
+  "block.polymiter.banner.tmeit.magenta": "majnta shotz",
+  "block.polymiter.banner.qmisk.magenta": "mead majnta kmizks",
+  "block.polymiter.banner.itk.magenta": "magenta 9000 nerdz",
+  "block.polymiter.banner.itchapter.magenta": "chaptr majnta",
+  "block.polymiter.banner.pirkko.magenta": "plasty rasp",
+
+  "block.polymiter.banner.tmeit.light_blue": "lite blu bird alkohlics",
+  "block.polymiter.banner.qmisk.light_blue": "brewblu kmizks",
+  "block.polymiter.banner.itk.light_blue": "skybyte nerdz",
+  "block.polymiter.banner.itchapter.light_blue": "chaptr lite blu",
+  "block.polymiter.banner.pirkko.light_blue": "bluish goop",
+
+  "block.polymiter.banner.tmeit.yellow": "yelo sippurz",
+  "block.polymiter.banner.qmisk.yellow": "ale yelo kmizks",
+  "block.polymiter.banner.itk.yellow": "lemnayd nerdz",
+  "block.polymiter.banner.itchapter.yellow": "chaptr yelo",
+  "block.polymiter.banner.pirkko.yellow": "yelo plastik",
+
+  "block.polymiter.banner.tmeit.lime": "laim sippurz",
+  "block.polymiter.banner.qmisk.lime": "limey kmizks",
+  "block.polymiter.banner.itk.lime": "limecalc nerdz",
+  "block.polymiter.banner.itchapter.lime": "chaptr laim",
+  "block.polymiter.banner.pirkko.lime": "lime goop",
+
+  "block.polymiter.banner.tmeit.pink": "pynk slosherz",
+  "block.polymiter.banner.qmisk.pink": "pinkz kmizks",
+  "block.polymiter.banner.itk.pink": "pinkbyte nerdz",
+  "block.polymiter.banner.itchapter.pink": "chaptr pynk",
+  "block.polymiter.banner.pirkko.pink": "plasty pink",
+
+  "block.polymiter.banner.tmeit.gray": "grae sippurz",
+  "block.polymiter.banner.qmisk.gray": "grai kmizks",
+  "block.polymiter.banner.itk.gray": "grai nerdz",
+  "block.polymiter.banner.itchapter.gray": "chaptr grae",
+  "block.polymiter.banner.pirkko.gray": "gray goop",
+
+  "block.polymiter.banner.tmeit.light_gray": "lite grae sippurz",
+  "block.polymiter.banner.qmisk.light_gray": "lite grai kmizks",
+  "block.polymiter.banner.itk.light_gray": "lite grai nerdz",
+  "block.polymiter.banner.itchapter.light_gray": "chaptr lite grae",
+  "block.polymiter.banner.pirkko.light_gray": "lite grai goop",
+
+  "block.polymiter.banner.tmeit.cyan": "sian sippurz",
+  "block.polymiter.banner.qmisk.cyan": "cyann kmizks",
+  "block.polymiter.banner.itk.cyan": "cybyte nerdz",
+  "block.polymiter.banner.itchapter.cyan": "chaptr sian",
+  "block.polymiter.banner.pirkko.cyan": "cyan goop",
+
+  "block.polymiter.banner.tmeit.purple": "purpul slosherz",
+  "block.polymiter.banner.qmisk.purple": "purpl kmizks",
+  "block.polymiter.banner.itk.purple": "purplbyte nerdz",
+  "block.polymiter.banner.itchapter.purple": "chaptr purpul",
+  "block.polymiter.banner.pirkko.purple": "purpul plastgoop",
+
+  "block.polymiter.banner.tmeit.blue": "blu sippurz",
+  "block.polymiter.banner.qmisk.blue": "bluu kmizks",
+  "block.polymiter.banner.itk.blue": "blubyte nerdz",
+  "block.polymiter.banner.itchapter.blue": "chaptr blu",
+  "block.polymiter.banner.pirkko.blue": "bluu goop",
+
+  "block.polymiter.banner.tmeit.brown": "braun slosherz",
+  "block.polymiter.banner.qmisk.brown": "braun kmizks",
+  "block.polymiter.banner.itk.brown": "braunbyte nerdz",
+  "block.polymiter.banner.itchapter.brown": "chaptr braun",
+  "block.polymiter.banner.pirkko.brown": "braun plastgoop",
+
+  "block.polymiter.banner.tmeit.red": "ryd faed sippurz",
+  "block.polymiter.banner.qmisk.red": "red fezz kmizks",
+  "block.polymiter.banner.itk.red": "redbyte nerdz",
+  "block.polymiter.banner.itchapter.red": "chaptr red",
+  "block.polymiter.banner.pirkko.red": "red goop",
+
+  "block.polymiter.banner.tmeit.black": "blak sippurz",
+  "block.polymiter.banner.qmisk.black": "blak kmizks",
+  "block.polymiter.banner.itk.black": "blakbyte nerdz",
+  "block.polymiter.banner.itchapter.black": "chaptr blak",
+  "block.polymiter.banner.pirkko.black": "blak plastgoop",
+
+  "item.polymiter.pirkko_banner_pattern": "Plastik goop loopy patturn"
+}
