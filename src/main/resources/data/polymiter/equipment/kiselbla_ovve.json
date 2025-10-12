@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "polymiter:armor_layer1.png"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "polymiter:armor_layer2.png"
+      }
+    ]
+  }
+}

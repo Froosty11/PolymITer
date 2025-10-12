@@ -89,5 +89,15 @@
   "block.polymiter.banner.itchapter.black": "Black IT-Chapter",
   "block.polymiter.banner.pirkko.black": "Black Pirkko",
 
-  "item.polymiter.pirkko_banner_pattern":  "Pirkko Banner Pattern"
+
+  "COMMENT: ":  "Polymiter Items",
+  "item.polymiter.pirkko_banner_pattern":  "Pirkko Banner Pattern",
+  "item.polymiter.nyckeln_drink": "Nyckeln Patch Drink",
+  "item.polymiter.slaggan_drink": "Släggan Patch Drink",
+  "item.polymiter.spiken_drink": "Spiken Patch Drink",
+
+
+  "COMMENT": "Polymiter Potion effects",
+  "effect.minecraft.luck": "Inebriation"
+
 }

@@ -46,7 +46,7 @@ public class DrinkItem extends Item implements PolymerItem {
     @Override
     public int getMaxUseTime(ItemStack stack, LivingEntity user) {
 
-        return 48;
+        return 30;
     }
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
@@ -56,7 +56,7 @@ public class DrinkItem extends Item implements PolymerItem {
             serverPlayer.incrementStat(Stats.USED.getOrCreateStat(this));
         }
 
-        if (user instanceof PlayerEntity) {
+        if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
             stack.decrement(1);
         }
 
@@ -67,6 +67,7 @@ public class DrinkItem extends Item implements PolymerItem {
         } else {
             user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.INEBRIATION, 20 * 60, 0));
         }
+        //We need to check if player is in creative mode, if so we don't decrement the item/swap to glass bottle.
         return stack.isEmpty() ? new ItemStack(Items.GLASS_BOTTLE) : stack;
     }
 

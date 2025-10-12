@@ -10,7 +10,15 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.consume.TeleportRandomlyConsumeEffect;
+import net.minecraft.network.packet.s2c.play.OverlayMessageS2CPacket;
+import net.minecraft.network.packet.s2c.play.SubtitleS2CPacket;
+import net.minecraft.network.packet.s2c.play.TitleFadeS2CPacket;
+import net.minecraft.network.packet.s2c.play.TitleS2CPacket;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
 import xyz.nucleoid.packettweaker.PacketContext;
 
 import java.util.Collection;
@@ -49,12 +57,11 @@ public class InebriationStatusEffect extends StatusEffect implements PolymerStat
     public void onRemoved(AttributeContainer attributeContainer)
     {
         super.onRemoved(attributeContainer);
-        Polymiter.LOGGER.info("Inebriation effect removed from entity.");
     }
 
     @Override
     public boolean applyUpdateEffect(ServerWorld world, LivingEntity entity, int amplifier) {
-        Polymiter.LOGGER.info("Inebriation effect tick for entity: {} with amplifier: {} and duration: {}", entity.getName().getString(), amplifier, duration);
+        //Polymiter.DEBUG.info("Inebriation effect tick for entity: {} with amplifier: {} and duration: {}", entity.getName().getString(), amplifier, duration);
         // stacking effect system. each level of amplify increases the amount of effects you get.
         // at amplification 1 you get slowness 1 OR speed 1 depending on a coinflip (isSlowness)
         // at amplification 2 you get the slowness/speed but also nausea
@@ -94,6 +101,8 @@ public class InebriationStatusEffect extends StatusEffect implements PolymerStat
             case 3 -> {
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, true, false, false));
                 if (entity.getEntityWorld() instanceof ServerWorld serverWorld) {
+                    ServerPlayerEntity srvPlayer = (ServerPlayerEntity) entity;
+                    srvPlayer.networkHandler.sendPacket(new OverlayMessageS2CPacket(Text.of("You wake up with a splitting headache...").getWithStyle(Style.EMPTY.withBold(true).withColor(0xFF0F0F)).getFirst()));
                     while(true) {
                         double d = entity.getX() + (entity.getRandom().nextDouble() - 0.5D) * 500.0D;
                         double e = net.minecraft.util.math.MathHelper.clamp(entity.getY() + (entity.getRandom().nextDouble() - 0.5D) * 500.0D, (double) serverWorld.getBottomY(), (double) (serverWorld.getBottomY() + serverWorld.getLogicalHeight() - 1));
@@ -103,18 +112,15 @@ public class InebriationStatusEffect extends StatusEffect implements PolymerStat
                         }
 
                         net.minecraft.util.math.Vec3d vec3d = entity.getEntityPos();
-                        if (entity.teleport(d, e, f, true)) {
+                        if (entity.teleport(d, e, f, false)) {
                             serverWorld.emitGameEvent(net.minecraft.world.event.GameEvent.TELEPORT, vec3d, net.minecraft.world.event.GameEvent.Emitter.of(entity));
-                            serverWorld.playSound(null, entity.getX(), entity.getY(), entity.getZ(), net.minecraft.sound.SoundEvents.ITEM_CHORUS_FRUIT_TELEPORT, net.minecraft.sound.SoundCategory.PLAYERS);
+                            serverWorld.playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ENTITY_PARROT_FLY, net.minecraft.sound.SoundCategory.PLAYERS);
                             entity.onLanding();
                             break;
                         }
                     }
-
                     entity.clearStatusEffects();
                     entity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, duration, 0, true, false, false));
-                    entity.
-
                 }
             }
         }

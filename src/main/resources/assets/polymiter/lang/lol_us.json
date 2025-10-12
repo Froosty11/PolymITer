@@ -89,5 +89,9 @@
   "block.polymiter.banner.itchapter.black": "chaptr blak",
   "block.polymiter.banner.pirkko.black": "blak plastgoop",
 
-  "item.polymiter.pirkko_banner_pattern": "Plastik goop loopy patturn"
+  "item.polymiter.pirkko_banner_pattern": "Plastik goop loopy patturn",
+  "item.polymiter.nyckeln_drink": "Nykln draink",
+  "item.polymiter.slaggan_drink": "hamr drenk",
+  "item.polymiter.spiken_drink": "spiked drink"
+
 }
