@@ -2,12 +2,12 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "polymiter:kisel_layer_1"
+        "texture": "polymiter:kisel_layer_1.png"
       }
     ],
     "humanoid_leggings": [
       {
-        "texture": "polymiter:kisel_layer_2"
+        "texture": "polymiter:red_layer_2.png"
       }
     ]
   }

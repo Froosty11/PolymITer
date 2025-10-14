@@ -95,9 +95,21 @@
   "item.polymiter.nyckeln_drink": "Nyckeln Patch Drink",
   "item.polymiter.slaggan_drink": "Släggan Patch Drink",
   "item.polymiter.spiken_drink": "Spiken Patch Drink",
+  "item.polymiter.patch": "Patch",
 
 
   "COMMENT": "Polymiter Potion effects",
-  "effect.minecraft.luck": "Inebriation"
+  "effect.minecraft.luck": "Inebriation",
+
+
+  "COMMENT: ": "ARMOR ITEMS ----------------------------------",
+  "item.polymiter.red_ovve": "Ocher red ovve",
+  "item.polymiter.violet_ovve": "Laser violet Ovve",
+  "item.polymiter.kiselbla_ovve": "Silicon blue ovve",
+
+
+  "Comment: ": "Paintings :) ----------------------------------",
+  "painting.polymiter.draken.author": "Unknown.",
+  "painting.polymiter.draken.title": "Kistans Beskyddare?"
 
 }

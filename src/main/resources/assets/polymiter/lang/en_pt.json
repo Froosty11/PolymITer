@@ -92,6 +92,11 @@
   "item.polymiter.pirkko_banner_pattern": "Pirkko banner pattern",
   "item.polymiter.nyckeln_drink": "Green flagged grog",
   "item.polymiter.slaggan_drink": "Red flagged clap o' thunder",
-  "item.polymiter.spiken_drink": "Blue flagged clap o' thunder"
+  "item.polymiter.spiken_drink": "Blue flagged clap o' thunder",
 
+
+  "COMMENT: ": "ARMOR ITEMS ----------------------------------",
+    "item.polymiter.red_ovve": "Ocher red ovve",
+    "item.polymiter.violet_ovve": "Laser violet Ovve",
+    "item.polymiter.kiselbla_ovve": "Silicon blue ovve"
 }

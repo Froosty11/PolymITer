@@ -63,7 +63,11 @@ public class ModItems {
 
 
     public static final Item KISELBLA_OVVE = registerItem("kiselbla_ovve",
-            (s) -> new PolymerArmorItem(ModArmorMaterial.KISELBLA_OVVE, EquipmentType.LEGGINGS, s.fireproof()));
+            (s) -> new PolymerArmorItem(ModArmorMaterial.KISELBLA_OVVE, EquipmentType.LEGGINGS, s.fireproof().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item OCHRAROD_OVVE = registerItem("red_ovve",
+            (s) -> new PolymerArmorItem(ModArmorMaterial.RED_OVVE, EquipmentType.LEGGINGS, s.fireproof().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item LASERVIOLETT_OVVE = registerItem("violet_ovve",
+            (s) -> new PolymerArmorItem(ModArmorMaterial.VIOLET_OVVE, EquipmentType.LEGGINGS, s.fireproof().rarity(Rarity.EPIC).maxCount(1)));
 
     public static final Item patch = register(
             "patch",
@@ -71,12 +75,29 @@ public class ModItems {
             new SimplePolymerItem.Settings().maxCount(64).rarity(Rarity.RARE)
     );
 
+    /**
+     * Registers an item with the given name, item factory, and settings. TODO: Add creative invenetory tab!
+     * @param name name of item. Will be namespaced to the mod id automatically.
+     * @param itemFactory Usually SimplePolymerItem::new or your custom item class constructor
+     * @param settings Item settings.
+     * @return
+     */
+
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Polymiter.MOD_ID, name));
         Item item = itemFactory.apply(settings.registryKey(itemKey));
         Registry.register(Registries.ITEM, itemKey, item);
         return item;
     }
+
+    /**
+     * Registers an item with the given name and item factory. TODO: Add creative invenetory tab! '
+     * TODO: Merge these two functions.
+     * Mostly used for armours since the only differnce is the Function containing Item type and Item settings in one instead of seperate.
+     * @param name
+     * @param function
+     * @return
+     */
     public static Item registerItem(String name, Function<Item.Settings, Item> function) {
         var id = Identifier.of(Polymiter.MOD_ID, name);
         var item = function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, id)));

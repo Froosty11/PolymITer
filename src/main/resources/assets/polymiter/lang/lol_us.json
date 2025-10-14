@@ -89,9 +89,19 @@
   "block.polymiter.banner.itchapter.black": "chaptr blak",
   "block.polymiter.banner.pirkko.black": "blak plastgoop",
 
-  "item.polymiter.pirkko_banner_pattern": "Plastik goop loopy patturn",
+
+
+  "COMMENT: ": "DRINKS ----------------------------------",
   "item.polymiter.nyckeln_drink": "Nykln draink",
   "item.polymiter.slaggan_drink": "hamr drenk",
-  "item.polymiter.spiken_drink": "spiked drink"
+  "item.polymiter.spiken_drink": "spiked drink",
 
+
+  "COMMENT: ": "ARMOR ITEMS ----------------------------------",
+  "item.polymiter.red_ovve": "Ocher red ovve",
+  "item.polymiter.violet_ovve": "Laser violet Ovve",
+  "item.polymiter.kiselbla_ovve": "Silicon blue ovve",
+
+  "COMMENT: ": "CRAFTING MATERIALS ----------------------------------",
+  "item.polymiter.pirkko_banner_pattern": "Plastik goop loopy patturn"
 }
