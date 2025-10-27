@@ -102,6 +102,10 @@
   "item.minecraft.splash_potion.effect.slaggan": "§eSplash Potion of Släggan",
   "item.minecraft.lingering_potion.effect.spiken": "§eSpiken the Day after",
   "item.minecraft.lingering_potion.effect.slaggan": "§eSläggan the Day after",
+  "item.minecraft.potion.effect.alcohol": "Alcoholic Beverage",
+  "item.minecraft.potion.effect.alcohol": "Splash Alcoholic Beverage",
+  "item.minecraft.potion.effect.alcohol": "Lingering Alcoholic Beverage",
+
   "item.polymiter.patch": "Patch",
 
 
@@ -120,7 +124,7 @@
 
 
   "Comment: ": "Paintings :) ----------------------------------",
-  "painting.polymiter.draken.author": "Emelie Stark",
-  "painting.polymiter.draken.title": "The Guardian of Kistan"
+  "painting.polymiter.draken.author": "§7Emelie Stark",
+  "painting.polymiter.draken.title": "§eThe Guardian of Kistan"
 
 }

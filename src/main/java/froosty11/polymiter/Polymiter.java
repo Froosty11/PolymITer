@@ -4,6 +4,7 @@ import eu.pb4.polymer.core.api.entity.PolymerEntityUtils;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import froosty11.polymiter.item.ModItems;
 import froosty11.polymiter.statuseffects.ModStatusEffects;
+import froosty11.polymiter.util.PolymiterLoottableModifiers;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 
@@ -23,7 +24,7 @@ public class Polymiter implements ModInitializer {
 
         Identifier expectedId = Identifier.of(MOD_ID, "pirkko_banner_pattern");
 
-
+        PolymiterLoottableModifiers.modifyLoottables();
 
         //polymer shish
         PolymerResourcePackUtils.addModAssets(MOD_ID);
