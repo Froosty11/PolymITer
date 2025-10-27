@@ -1,5 +1,6 @@
 package froosty11.polymiter;
 
+import eu.pb4.polymer.core.api.entity.PolymerEntityUtils;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import froosty11.polymiter.item.ModItems;
 import froosty11.polymiter.statuseffects.ModStatusEffects;
@@ -21,6 +22,7 @@ public class Polymiter implements ModInitializer {
         ModStatusEffects.initialize();
 
         Identifier expectedId = Identifier.of(MOD_ID, "pirkko_banner_pattern");
+
 
 
         //polymer shish

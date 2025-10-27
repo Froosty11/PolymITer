@@ -3,9 +3,9 @@
   "height": 4,
   "asset_id": "polymiter:draken",
   "title": {
-    "translate": "polymiter.painting.draken.title"
+    "translate": "painting.polymiter.draken.title"
   },
   "author": {
-    "translate": "polymiter.painting.draken.author"
+    "translate": "painting.polymiter.draken.author"
   }
 }
