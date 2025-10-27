@@ -95,11 +95,22 @@
   "item.polymiter.nyckeln_drink": "Nyckeln Patch Drink",
   "item.polymiter.slaggan_drink": "Släggan Patch Drink",
   "item.polymiter.spiken_drink": "Spiken Patch Drink",
+  "item.polymiter.alcohol_drink": "Alcoholic Beverage",
+  "item.minecraft.potion.effect.spiken": "§eSpiken Patch Drink",
+  "item.minecraft.potion.effect.slaggan": "§eSläggan Patch Drink",
+  "item.minecraft.splash_potion.effect.spiken": "§eSplash Potion of Spiken",
+  "item.minecraft.splash_potion.effect.slaggan": "§eSplash Potion of Släggan",
+  "item.minecraft.lingering_potion.effect.spiken": "§eSpiken the Day after",
+  "item.minecraft.lingering_potion.effect.slaggan": "§eSläggan the Day after",
   "item.polymiter.patch": "Patch",
 
 
+  "COMMENT" : "Random Shit",
+  "main_group.polymiter": "Polymiter",
+
   "COMMENT": "Polymiter Potion effects",
   "effect.minecraft.luck": "Inebriation",
+  "effect.polymiter.inebriation": "Inebriation",
 
 
   "COMMENT: ": "ARMOR ITEMS ----------------------------------",

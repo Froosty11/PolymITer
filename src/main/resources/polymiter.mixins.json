@@ -4,6 +4,7 @@
   "package": "froosty11.polymiter.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ConsumableComponentMixin"
   ],
   "injectors": {
     "defaultRequire": 1

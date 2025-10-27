@@ -2,18 +2,19 @@
 // File: src/main/java/froosty11/polymiter/item/ModItems.java
 package froosty11.polymiter.item;
 
+import eu.pb4.polymer.core.api.item.PolymerItemUtils;
 import eu.pb4.polymer.core.api.item.SimplePolymerItem;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
-import eu.pb4.polymer.core.api.other.PolymerPotion;
 import eu.pb4.polymer.core.api.other.SimplePolymerPotion;
 import froosty11.polymiter.Polymiter;
 import froosty11.polymiter.statuseffects.ModStatusEffects;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.block.entity.BannerPattern;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ConsumableComponent;
+import net.minecraft.component.type.CustomModelDataComponent;
+import net.minecraft.component.type.PotionContentsComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.*;
 import net.minecraft.item.consume.UseAction;
@@ -59,16 +60,20 @@ public class ModItems {
             SimplePolymerItem::new, new SimplePolymerItem.Settings().maxCount(1)
                     .rarity(Rarity.RARE).component(DataComponentTypes.PROVIDES_BANNER_PATTERNS, PIRKKO_PATTERN_TAG));
     //Consumable Items
-    public static final Item SPIKEN_DRINK = registerItem("spiken_drink", DrinkItem::new,
-            new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON));
-    public static final Item SLAGGAN_DRINK = registerItem("slaggan_drink",
-            DrinkItem::new, new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON));
+    public static final SimplePolymerPotion ALCOHOL_POTION = Registry.register(Registries.POTION, Identifier.of(Polymiter.MOD_ID, "alcohol_potion"),
+            new SimplePolymerPotion("alcohol", new StatusEffectInstance(ModStatusEffects.INEBRIATION, 4000, 0)));
+
+    // Converted Spiken and Slaggan from drink items to registered potions
+    public static final SimplePolymerPotion SPIKEN_POTION = Registry.register(Registries.POTION, Identifier.of(Polymiter.MOD_ID, "spiken_potion"),
+            new SimplePolymerPotion("spiken", new StatusEffectInstance(ModStatusEffects.INEBRIATION, 4000, 0)));
+
+    public static final SimplePolymerPotion SLAGGAN_POTION = Registry.register(Registries.POTION, Identifier.of(Polymiter.MOD_ID, "slaggan_potion"),
+            new SimplePolymerPotion("slaggan", new StatusEffectInstance(ModStatusEffects.INEBRIATION, 4000, 0)));
+
+
     public static final Item NYCKELN_DRINK = registerItem("nyckeln_drink", SimplePolymerItem::new,
             new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).component(DataComponentTypes.CONSUMABLE,
                     new ConsumableComponent(32 / 20f, UseAction.DRINK, SoundEvents.ENTITY_GENERIC_DRINK, false, List.of())));
-
-    public static final SimplePolymerPotion ALCOHOL_POTION = Registry.register(Registries.POTION, Identifier.of(Polymiter.MOD_ID, "alcohol_potion"),
-            new SimplePolymerPotion("alcohol", new StatusEffectInstance(ModStatusEffects.INEBRIATION, 6000, 0)));
 
     //Material Items
     public static final Item patch = registerItem("patch", SimplePolymerItem::new,
@@ -111,28 +116,69 @@ public class ModItems {
     }
 
     public static void initialize() {
-        // Register the server-side Polymer item group so Polymer-compatible clients and the /polymer creative command can see it
+        // Register the server-side Polymer item group
         PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(Polymiter.MOD_ID, "polymiter"), POLYMITER_IG);
+        ItemGroupEvents.modifyEntriesEvent(POLYMITER_IG_KEY).register(itemGroup -> {
+            itemGroup.add(PotionContentsComponent.createStack(Items.POTION, Registries.POTION.getEntry(ALCOHOL_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.SPLASH_POTION, Registries.POTION.getEntry(ALCOHOL_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.LINGERING_POTION, Registries.POTION.getEntry(ALCOHOL_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.POTION, Registries.POTION.getEntry(SLAGGAN_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.SPLASH_POTION, Registries.POTION.getEntry(SLAGGAN_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.LINGERING_POTION, Registries.POTION.getEntry(SLAGGAN_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.POTION, Registries.POTION.getEntry(SPIKEN_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.SPLASH_POTION, Registries.POTION.getEntry(SPIKEN_POTION)));
+            itemGroup.add(PotionContentsComponent.createStack(Items.LINGERING_POTION, Registries.POTION.getEntry(SPIKEN_POTION)));
 
+        });
+        // Register brewing recipes
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(
-                    // Input potion.
                     Potions.WATER,
-                    // Ingredient
                     Items.POTATO,
-                    // Output potion.
                     Registries.POTION.getEntry(ALCOHOL_POTION)
             );
         });
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-            builder.registerItemRecipe(
-                    // Input potion.
+            builder.registerPotionRecipe(
                     Registries.POTION.getEntry(ALCOHOL_POTION),
-                    // Ingredient
-                    Items.SUSPICIOUS_STEW,
-                    // Output potion.
-                    ModItems.SLAGGAN_DRINK.
+                    Items.SWEET_BERRIES,
+                    Registries.POTION.getEntry(SPIKEN_POTION)
             );
         });
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+            builder.registerPotionRecipe(
+                    Registries.POTION.getEntry(ALCOHOL_POTION),
+                    Items.SUSPICIOUS_STEW,
+                    Registries.POTION.getEntry(SLAGGAN_POTION)
+            );
+        });
+
+        // Register potion item modification for custom model data
+        PolymerItemUtils.ITEM_MODIFICATION_EVENT.register(
+                (original, client, context) -> {
+                    if (original.getItem() instanceof PotionItem) {
+                        var potionContents = original.get(DataComponentTypes.POTION_CONTENTS);
+                        if (potionContents != null) {
+                            var potionEntry = potionContents.potion().orElse(null);
+                            if (potionEntry != null) {
+                                var potion = potionEntry.value();
+                                if (potion == SPIKEN_POTION) {
+                                    client.set(DataComponentTypes.ITEM_MODEL,
+                                            Identifier.of(Polymiter.MOD_ID, "spiken_drink"));
+                                } else if (potion == SLAGGAN_POTION) {
+                                    client.set(DataComponentTypes.ITEM_MODEL,
+                                            Identifier.of(Polymiter.MOD_ID, "slaggan_drink"));
+                                } else if (potion == ALCOHOL_POTION) {
+                                    client.set(DataComponentTypes.ITEM_MODEL,
+                                            Identifier.of(Polymiter.MOD_ID, "alcohol_drink"));
+                                }
+                            }
+                        }
+                    }
+                    return client;
+                });
+
     }
+
+
 }

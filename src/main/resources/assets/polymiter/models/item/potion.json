@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/potion"
+  },
+  "overrides": [
+    {
+      "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "cases": [
+          {
+            "when": [1.0],
+            "model": "polymiter:item/spiken_drink"
+          },
+          {
+            "when": [2.0],
+            "model": "polymiter:item/slaggan_drink"
+          },
+          {
+            "when": [3.0],
+            "model": "polymiter:item/alcohol_drink"
+          }
+        ]
+      }
+    }
+  ]
+}
