@@ -28,6 +28,10 @@ public class InebriationStatusEffect extends StatusEffect implements PolymerStat
     private int duration;
     private boolean isSlowness;
 
+    public void setSlaggan(boolean slaggan) {
+        isSlaggan = slaggan;
+    }
+
     protected InebriationStatusEffect(boolean isSlaggan) {
         super(StatusEffectCategory.BENEFICIAL, isSlaggan ? 0xFF69B4 : 0x8A2BE2); // Pink for Slaggan, BlueViolet for regular drunk
         this.isSlaggan = isSlaggan;
