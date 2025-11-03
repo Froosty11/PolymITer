@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "minecraft:purple_wool",
+    "Y": "polymiter:patch"
+  },
+  "pattern": [
+    "XYX",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "polymiter:violet_ovve"
+  }
+}

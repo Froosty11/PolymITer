@@ -11,15 +11,25 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 public class PolymiterLoottableModifiers {
     public static void modifyLoottables() {
         LootTableEvents.MODIFY.register((registryKey, builder, lootTableSource, wrapperLookup) -> {
-            if (registryKey.equals(LootTables.SIMPLE_DUNGEON_CHEST)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f)) // 12% chance
-                        .with(ItemEntry.builder(ModItems.PIRKKO_BANNER_PATTERN));
+            boolean isTarget = registryKey.equals(LootTables.SIMPLE_DUNGEON_CHEST)
+                    || registryKey.equals(LootTables.DESERT_PYRAMID_CHEST)
+                    || registryKey.equals(LootTables.JUNGLE_TEMPLE_CHEST);
 
-                builder.pool(poolBuilder);
+            if (isTarget) {
+                // Banner pattern (rare)
+                LootPool.Builder bannerPool = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .with(ItemEntry.builder(ModItems.PIRKKO_BANNER_PATTERN));
+                builder.pool(bannerPool);
+
+                // Patches: more common and can drop in pairs (uses the generic 'patch' item)
+                LootPool.Builder patchPool = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(2))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.patch));
+                builder.pool(patchPool);
             }
         });
     }
-
 }

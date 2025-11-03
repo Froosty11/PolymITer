@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_potion": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:potion"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "polymiter:nyckeln_drink"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_apple",
+      "has_potion"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "polymiter:nyckeln_drink"
+    ]
+  }
+}

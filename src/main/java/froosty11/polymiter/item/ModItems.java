@@ -61,14 +61,14 @@ public class ModItems {
                     .rarity(Rarity.RARE).component(DataComponentTypes.PROVIDES_BANNER_PATTERNS, PIRKKO_PATTERN_TAG));
     //Consumable Items
     public static final SimplePolymerPotion ALCOHOL_POTION = Registry.register(Registries.POTION, Identifier.of(Polymiter.MOD_ID, "alcohol_potion"),
-            new SimplePolymerPotion("alcohol", new StatusEffectInstance(ModStatusEffects.INEBRIATION, 4000, 0)));
+            new SimplePolymerPotion("alcohol", new StatusEffectInstance(ModStatusEffects.INEBRIATION_SPIKEN, 4000, 0)));
 
     // Converted Spiken and Slaggan from drink items to registered potions
     public static final SimplePolymerPotion SPIKEN_POTION = Registry.register(Registries.POTION, Identifier.of(Polymiter.MOD_ID, "spiken_potion"),
-            new SimplePolymerPotion("spiken", new StatusEffectInstance(ModStatusEffects.INEBRIATION, 4000, 0)));
+            new SimplePolymerPotion("spiken", new StatusEffectInstance(ModStatusEffects.INEBRIATION_SPIKEN, 4000, 0)));
 
     public static final SimplePolymerPotion SLAGGAN_POTION = Registry.register(Registries.POTION, Identifier.of(Polymiter.MOD_ID, "slaggan_potion"),
-            new SimplePolymerPotion("slaggan", new StatusEffectInstance(ModStatusEffects.INEBRIATION, 4000, 0)));
+            new SimplePolymerPotion("slaggan", new StatusEffectInstance(ModStatusEffects.INEBRIATION_SLAGGAN, 4000, 0)));
 
 
     public static final Item NYCKELN_DRINK = registerItem("nyckeln_drink", SimplePolymerItem::new,

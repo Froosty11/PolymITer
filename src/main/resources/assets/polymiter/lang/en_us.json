@@ -114,7 +114,9 @@
 
   "COMMENT": "Polymiter Potion effects",
   "effect.minecraft.luck": "Inebriation",
-  "effect.polymiter.inebriation": "Inebriation",
+  "effect.polymiter.inebriation_spiken": "Inebriation",
+  "effect.polymiter.inebriation_slaggan": "Inebriation",
+
 
 
   "COMMENT: ": "ARMOR ITEMS ----------------------------------",

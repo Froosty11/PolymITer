@@ -8,8 +8,11 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 public class ModStatusEffects{
-    public static final RegistryEntry<StatusEffect> INEBRIATION
-            = Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of("polymiter", "inebriation"), new InebriationStatusEffect());
+    public static final RegistryEntry<StatusEffect> INEBRIATION_SLAGGAN
+            = Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of("polymiter", "inebriation_slaggan"), new InebriationStatusEffect(true));
+
+    public static final RegistryEntry<StatusEffect> INEBRIATION_SPIKEN
+            = Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of("polymiter", "inebriation_spiken"), new InebriationStatusEffect(false));
 
     public static void initialize() {
 

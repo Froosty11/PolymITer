@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "minecraft:light_blue_wool",
+    "Y": "polymiter:patch"
+  },
+  "pattern": [
+    "XYX",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "polymiter:kiselbla_ovve"
+  }
+}
