@@ -67,7 +67,7 @@ public class ConsumableComponentMixin {
 
     @Inject(method = "finishConsumption", at = @At("TAIL"))
     private void applyStackingInebriation(World world, LivingEntity user, ItemStack stack, CallbackInfoReturnable<ItemStack> cir) {
-        System.out.println("[DEBUG] finishConsumption called for item: " + stack.getItem().getClass().getSimpleName());
+        //System.out.println("[DEBUG] finishConsumption called for item: " + stack.getItem().getClass().getSimpleName());
 
         Integer prevAmpObj = prevInebAmplifier.remove(user);
         prevInebWasSlaggan.remove(user);
@@ -82,12 +82,12 @@ public class ConsumableComponentMixin {
         // Use the potion info captured at HEAD instead of relying on the possibly-mutated stack
         RegistryEntry<Potion> potionEntry = consumedPotion.remove(user);
         if (potionEntry == null) {
-            System.out.println("[DEBUG] Not a PotionItem (or no potion info captured), skipping");
+            //System.out.println("[DEBUG] Not a PotionItem (or no potion info captured), skipping");
             return;
         }
 
         Potion potion = potionEntry.value();
-        System.out.println("[DEBUG] Potion: " + potion);
+        //System.out.println("[DEBUG] Potion: " + potion);
 
         if (potion == ModItems.SPIKEN_POTION || potion == ModItems.SLAGGAN_POTION || potion == ModItems.ALCOHOL_POTION) {
             if (prevAmp >= 0) {
@@ -107,9 +107,9 @@ public class ConsumableComponentMixin {
                     user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.INEBRIATION_SPIKEN, remainingDuration, newAmp));
                 }
 
-                System.out.println("[DEBUG] Prev amp: " + prevAmp + ", New amp: " + newAmp + ", Duration: " + remainingDuration);
+                //System.out.println("[DEBUG] Prev amp: " + prevAmp + ", New amp: " + newAmp + ", Duration: " + remainingDuration);
             } else {
-                System.out.println("[DEBUG] No existing inebriation before consumption — not stacking");
+                //System.out.println("[DEBUG] No existing inebriation before consumption — not stacking");
             }
         }
     }
